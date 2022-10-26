@@ -25,9 +25,10 @@ video {
 }
 
 .search {
-  width: 80%;
+  width: 30%;
   padding: 12px 24px;
   background-color: transparent;
+  font-family: 'Noto Sans Ethiopic', sans-serif;
   font-size: 18px;
   line-height: 18px;
   margin-left: 0px;
@@ -37,12 +38,6 @@ video {
 input {
   border: none;
   box-shadow: inset 0px 0px 0px 2px #e3dfe7;
-}
-
-input:focus {
-  border: none;
-  outline:none;
-  box-shadow: none;
 }
 
 button {
