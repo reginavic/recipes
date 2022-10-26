@@ -1,38 +1,106 @@
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 .App {
-  text-align: center;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  display: flex;
+  justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contain {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+.search {
+  width: 80%;
+  padding: 12px 24px;
+  background-color: transparent;
+  font-size: 18px;
+  line-height: 18px;
+  margin-left: 0px;
+  border-radius: 2px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  border: none;
+  box-shadow: inset 0px 0px 0px 2px #e3dfe7;
+}
+
+input:focus {
+  border: none;
+  outline:none;
+  box-shadow: none;
+}
+
+button {
+  border-color: white;
+}
+
+.icons {
+  cursor: pointer;
+  border-radius: 2px;  
+}
+
+.tasty {
+  border-radius: 3px;
+}
+
+.mealType {
+  font-family: 'Noto Sans Ethiopic', sans-serif;
+}
+
+ul {
+  width: 300px;
+  list-style: none; 
+  padding: 0;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+li {
+  display: block;
+  padding: .4em .4em .4em .8em;
+  font-size: 17px;
+  color:#222022;
+  font-weight: bold;
+}
+
+.list {
+  width: 40%;
+  background: #a6b1c2;
+  opacity: 0.7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2% 32.5%
+}
+
+h1, h2, p, li {
+  font-family: 'Noto Sans Ethiopic', sans-serif;
+  color:#222022;
+  letter-spacing: 1px;
+}
+
+.sphere {
+  width: 12px;
+  margin: 1%;
+}
+
+p {
+  margin: 1% auto;
+  color: rgb(13, 26, 56);
+  font-weight: bold;
+  font-style: italic;
 }
