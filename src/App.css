@@ -8,6 +8,10 @@ video {
   z-index: -1;
 }
 
+body {
+  margin: 0;
+}
+
 .App {
   background-color: rgba(255, 255, 255, 0.3);
 }
@@ -98,4 +102,27 @@ p {
   color: rgb(13, 26, 56);
   font-weight: bold;
   font-style: italic;
+}
+
+@media all and (max-width: 500px) {
+  .App{
+    width: 100%;
+  }
+  .tasty {
+    width: 200px;
+    height: 200px;
+  }
+  .list {
+    width: 70%;
+  }
+}
+
+@media all and (max-width: 300px) {
+  .App{
+    width: 100%;
+  }
+  .tasty {
+    width: 120px;
+    height: 120px;
+  }
 }
